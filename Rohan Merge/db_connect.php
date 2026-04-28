@@ -1,5 +1,15 @@
 <?php
-function db_connect(){
-    return $db = new SQLite3("S&M Database.db");
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "luckynestdb";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
 ?>
+ 

@@ -1,9 +1,11 @@
 <?php
-include("auth.php");
-include("db_connect.php");
+session_start();
+include("db_connect.php"); // your database connection
 
+// Get logged in user ID
 $user_id = $_SESSION['user_id'];
 
+// Get user details from database
 $sql = "SELECT name, email, phone, address FROM users WHERE id='$user_id'";
 $result = mysqli_query($conn, $sql);
 $user = mysqli_fetch_assoc($result);
@@ -18,6 +20,7 @@ $user = mysqli_fetch_assoc($result);
 
 body{
     font-family: Arial;
+    background-color:#f4f4f4;
 }
 
 .profile-container{
@@ -95,7 +98,7 @@ h2{
 
 </div>
 
-<a href="updateProfile.php">
+<a href="update_profile.php">
 <button class="update-btn">Update Information</button>
 </a>
 
