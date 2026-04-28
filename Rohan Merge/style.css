@@ -1,0 +1,150 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.centered-header { 
+    text-align: left; 
+}
+
+.header {
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;  
+}
+
+
+.main { 
+  flex: 1;
+  padding: 1rem;
+}
+
+
+.header a { /* Navbar homepage button */
+  float: left;
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 14px 16px;
+}
+.dropdown {
+  float: left;
+}
+.dropdown .dropbtn { /* Top level Dropdowns */
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  padding: 42px 35px;
+}
+.header a:hover,
+.dropdown:hover .dropbtn { /* Main Dropdowns hover */ 
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.dropdown-content { /* Secondary Dropdowns*/
+  display: none;
+  position: absolute;
+  background-color:rgb(0, 0, 0);
+  min-width: 160px;
+  box-shadow: 0px 12px 18px 0px rgb(0, 0, 0);
+}
+.dropdown-content a { /* Secondary Dropdown text */
+  float: none;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* NOT CHANGED YET */
+form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgb(0, 0, 0);
+  border-radius: 8px;
+}
+
+/* NOT CHANGED YET  */
+input[type="text"], input[type="number"], input[type="date"], input[type="email"], input[type="submit"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 4px;
+}
+
+/* NOT CHANGED YET */
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+}
+
+button { /* Button styling main */
+  background-color: rgb(0, 0, 0);
+  border:none;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+ /* Table styles */
+ table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+thead tr {/* Tabel Header */
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+th {
+  padding: 12px 15px;
+}
+
+td {
+  padding: 12px 15px;
+}
+
+tbody tr {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+
+.pagination a{
+  display: inline;
+  width: 115px;
+  height: 25px;
+  background: rgb(40, 40, 40);
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+  line-height: 25px;
+  margin: 0 5px;
+  color: rgb(255, 255, 255);
+}
+
+.pagination strong{
+  margin: 0 5px;
+  font-weight: bold;
+}
+
+
+
