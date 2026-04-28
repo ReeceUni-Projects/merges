@@ -1,0 +1,327 @@
+/* GLOBAL RESET */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f2f2a;
+  background-image: url('Images/bg.png');
+  background-repeat: repeat;
+  background-size: 500px;
+  background-position: top left;
+}
+
+/* NAVBAR */
+.ln-navbar {
+  background-color: #000;
+  padding: 0;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.ln-navbar .navbar-brand img {
+  display: block;
+}
+
+/* NAVBAR LINKS */
+.ln-navbar a,
+.ln-navbar .dropbtn {
+  display: block;
+  color: #fff;
+  padding: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.ln-navbar a:hover,
+.ln-navbar .dropbtn:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* DROPDOWN CONTAINER */
+.ln-navbar .dropdown {
+  position: relative;
+}
+
+/* DROPDOWN MENU */
+.ln-navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  min-width: 160px;
+  z-index: 9999;
+}
+
+.ln-navbar .dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  display: block;
+}
+
+.ln-navbar .dropdown-content a:hover {
+  background: #333;
+}
+
+.ln-navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* HOMEPAGE CONTENT */
+.home-content {
+  padding-top: 140px;
+  text-align: center;
+}
+
+.home-content h1 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.home-content h2 {
+  color: white;
+  font-weight: normal;
+}
+
+/* FORMS */
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+input[type="password"],
+input[type="month"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+/* BUTTONS */
+button {
+  background-color: #000;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 12px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+/* GREEN BUY BUTTONS */
+.buy-btn {
+  background: #28a745 !important;
+  color: white !important;
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.buy-btn:hover {
+  background: #218838 !important;
+}
+
+/* TABLES */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+thead tr {
+  background-color: #000;
+  color: #fff;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px 15px;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #f0f0f0;
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid #000;
+}
+
+/* PAGINATION */
+.pagination a {
+  display: inline-block;
+  background: #282828;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 0 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.pagination strong {
+  margin: 0 5px;
+  font-weight: bold;
+}
+
+.nav-user {
+  color: white;
+  font-weight: bold;
+  margin-left: auto;
+  padding: 20px;
+}
+
+.owner-navbar {
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  box-sizing: border-box;
+}
+
+.owner-navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 18px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.owner-navbar a:hover {
+  background: white;
+  color: black;
+}
+
+
+.owner-navbar {
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  box-sizing: border-box;
+}
+
+.owner-navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 18px;
+  border-radius: 6px;
+}
+
+.owner-navbar a:hover {
+  background: white;
+  color: black;
+}
+
+.compare-chart {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.compare-group {
+    text-align: center;
+}
+
+.compare-bars {
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 12px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0;
+}
+
+.compare-bar {
+    width: 45px;
+    border-radius: 8px 8px 0 0;
+    min-height: 8px;
+}
+
+.this-month-bar {
+    background: #1f5f4a;
+}
+
+.last-month-bar {
+    background: #d69e2e;
+}
+
+.compare-label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.compare-value {
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.legend {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.legend span {
+    display: inline-block;
+    margin: 0 12px;
+    font-weight: bold;
+}
