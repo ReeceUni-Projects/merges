@@ -1,5 +1,5 @@
 <?php
-include "auth.php";
+
 require 'navbar.php';
 ?>
 
@@ -8,15 +8,19 @@ require 'navbar.php';
 <head>
     <meta charset="UTF-8">
     <title>Laundry Services - LuckyNest</title>
+
+    <!-- IMPORTANT: Load global CSS -->
     <link rel="stylesheet" href="style.css">
 
     <style>
         body{
             font-family: Arial, sans-serif;
+            background:#f2f2f2;
             margin:0;
             padding:0;
         }
 
+        /* FIX: Push content below navbar */
         .container{
             width:80%;
             margin:140px auto 40px auto;
@@ -89,6 +93,7 @@ require 'navbar.php';
 
     <div class="section-title">Quick Plans</div>
 
+    <!-- Wash + Fold -->
     <form action="makePayment.php" method="POST" class="service-box">
         <div class="service-name">Wash + Fold (Per Load)</div>
         <div class="price">£1.90</div>
@@ -98,6 +103,7 @@ require 'navbar.php';
         <button type="submit" name="startPayment" class="buy-btn">Buy</button>
     </form>
 
+    <!-- Wash + Iron -->
     <form action="makePayment.php" method="POST" class="service-box">
         <div class="service-name">Wash + Iron (Per Load)</div>
         <div class="price">£2.85</div>
@@ -109,6 +115,7 @@ require 'navbar.php';
 
     <div class="section-title">Packages</div>
 
+    <!-- Weekly Unlimited -->
     <form action="makePayment.php" method="POST" class="service-box">
         <div class="service-name">Weekly Unlimited</div>
         <div class="price">£14.25</div>
@@ -118,6 +125,7 @@ require 'navbar.php';
         <button type="submit" name="startPayment" class="buy-btn">Buy</button>
     </form>
 
+    <!-- Monthly Unlimited -->
     <form action="makePayment.php" method="POST" class="service-box">
         <div class="service-name">Monthly Unlimited</div>
         <div class="price">£47.50</div>
